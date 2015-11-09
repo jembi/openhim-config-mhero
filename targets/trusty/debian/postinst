@@ -1,0 +1,8 @@
+#!/bin/bash
+set -e
+
+# make sure OpenHIM service is started
+sleep 10
+
+cd /etc/openhim
+./load-initial-data.sh data.json

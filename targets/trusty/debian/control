@@ -1,0 +1,15 @@
+Source: openhim-config-<your_project>
+Maintainer: Ryan Crichton <ryan@jembi.org>
+Section: web
+Priority: optional
+Standards-Version: 3.9.1
+Build-Depends: debhelper (>= 7)
+Homepage: http://www.openhim.org/
+
+
+Package: openhim-config-<your_project>
+Architecture: amd64
+Depends: openhim-core-js, curl, jq
+Recommends:
+Description: OpenHIM Config for <your_project>
+ Automatically configures the openhim-core server installed by the openhim-core debian package.

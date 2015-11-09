@@ -1,0 +1,5 @@
+openhim-config-<your_project> (0.1.0-1~trusty) trusty; urgency=low
+
+  * Initial build.
+
+ -- Ryan Crichton <ryan@jembi.org>  Mon, 09 Nov 2015 09:25:09 +0200

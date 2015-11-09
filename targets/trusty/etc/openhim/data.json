@@ -1,0 +1,201 @@
+{
+  "Users": [
+    {
+      "dailyReport": true,
+      "email": "test@jembi.org",
+      "expiry": null,
+      "firstname": "Test",
+      "locked": false,
+      "msisdn": "0000000000",
+      "passwordAlgorithm": "sha512",
+      "passwordHash": "test",
+      "passwordSalt": "test",
+      "settings": {
+        "visualizer": {
+          "components": [],
+          "endpoints": [],
+          "color": {
+            "inactive": "CCCCCC",
+            "active": "4cae4c",
+            "error": "d43f3a",
+            "text": "000000"
+          },
+          "size": {
+            "responsive": true,
+            "width": 1000,
+            "height": 400,
+            "padding": 20
+          },
+          "time": {
+            "updatePeriod": 200,
+            "maxSpeed": 5,
+            "maxTimeout": 5000
+          }
+        }
+      },
+      "surname": "Test",
+      "token": null,
+      "weeklyReport": true,
+      "groups": [
+        "jsonstub",
+        "polling"
+      ]
+    },
+    {
+      "dailyReport": false,
+      "email": "Test2@jembi.org",
+      "expiry": null,
+      "firstname": "Test2",
+      "locked": false,
+      "msisdn": null,
+      "passwordAlgorithm": "sha512",
+      "passwordHash": "test",
+      "passwordSalt": "test",
+      "settings": {
+        "visualizer": {
+          "components": [],
+          "endpoints": [],
+          "color": {
+            "inactive": "CCCCCC",
+            "active": "4cae4c",
+            "error": "d43f3a",
+            "text": "000000"
+          },
+          "size": {
+            "responsive": true,
+            "width": 1000,
+            "height": 400,
+            "padding": 20
+          },
+          "time": {
+            "updatePeriod": 200,
+            "maxSpeed": 5,
+            "maxTimeout": 5000
+          }
+        }
+      },
+      "surname": "Test2",
+      "token": null,
+      "weeklyReport": true,
+      "groups": [
+        "ohie"
+      ]
+    }
+  ],
+  "Clients": [
+    {
+      "clientID": "full-client-2",
+      "contactPerson": "Test",
+      "contactPersonEmail": "a@b.org",
+      "description": "blah b lah blah",
+      "name": "Full Client-2",
+      "organization": "Some Org",
+      "passwordAlgorithm": "sha512",
+      "passwordHash": "test",
+      "passwordSalt": "test",
+      "softwareName": "Some Soft",
+      "roles": [
+        "test"
+      ]
+    },
+    {
+      "certFingerprint": "B2:70:EB:14:BD:BB:94:BB:F1:4C:FA:DF:EC:E3:F3:20:62:8B:D6:59",
+      "clientDomain": "test",
+      "clientID": "test-2",
+      "name": "test-2",
+      "passwordAlgorithm": "sha512",
+      "passwordHash": "test",
+      "passwordSalt": "test",
+      "roles": [
+        "test"
+      ]
+    }
+  ],
+  "Channels": [
+    {
+      "description": "OpenHIM Bench - Basic GET Test",
+      "matchContentJson": null,
+      "matchContentRegex": null,
+      "matchContentValue": null,
+      "matchContentXpath": null,
+      "name": "OpenHIM Bench - Basic GET Test",
+      "pollingSchedule": null,
+      "requestBody": true,
+      "responseBody": true,
+      "tcpHost": null,
+      "tcpPort": null,
+      "urlPattern": "^/bench/basic/get$",
+      "rewriteUrlsConfig": [],
+      "addAutoRewriteRules": true,
+      "rewriteUrls": false,
+      "status": "enabled",
+      "alerts": [],
+      "txRerunAcl": [],
+      "txViewFullAcl": [],
+      "txViewAcl": [
+        "ohie"
+      ],
+      "properties": [],
+      "matchContentTypes": [],
+      "routes": [
+        {
+          "host": "localhost",
+          "name": "Basic GET",
+          "port": 6050,
+          "primary": true,
+          "secured": false,
+          "type": "http"
+        }
+      ],
+      "authType": "private",
+      "whitelist": [],
+      "allow": [
+        "bench"
+      ],
+      "type": "http"
+    },
+    {
+      "description": "OpenHIM Bench - Basic POST Test",
+      "matchContentJson": null,
+      "matchContentRegex": null,
+      "matchContentValue": null,
+      "matchContentXpath": null,
+      "name": "OpenHIM Bench - Basic POST Test",
+      "pollingSchedule": null,
+      "requestBody": true,
+      "responseBody": true,
+      "tcpHost": null,
+      "tcpPort": null,
+      "urlPattern": "^/bench/basic/post$",
+      "rewriteUrlsConfig": [],
+      "addAutoRewriteRules": true,
+      "rewriteUrls": false,
+      "status": "enabled",
+      "alerts": [],
+      "txRerunAcl": [],
+      "txViewFullAcl": [],
+      "txViewAcl": [
+        "ohie"
+      ],
+      "properties": [],
+      "matchContentTypes": [],
+      "routes": [
+        {
+          "host": "localhost",
+          "name": "Basic POST",
+          "port": 6050,
+          "primary": true,
+          "secured": false,
+          "type": "http"
+        }
+      ],
+      "authType": "private",
+      "whitelist": [],
+      "allow": [
+        "bench",
+        "ohie"
+      ],
+      "type": "http"
+    }
+  ]
+}
