@@ -5,4 +5,23 @@ set -e
 sleep 10
 
 cd /etc/openhim
+
+# fetch server details
+. /usr/share/debconf/confmodule
+db_get openhim-config/host
+HOST=$RET
+db_get openhim-config/port
+PORT=$RET
+db_get openhim-config/username
+USER=$RET
+db_get openhim-config/password
+PASSWD=$RET
+
+echo "Configured for OpenHIM server $HOST:$PORT using user $USER"
+
+# inject serer details
+sudo sed -i -r 's/server=.*/server="'$HOST:$PORT'"/' load-initial-data.sh
+sudo sed -i -r 's/username=.*/username="'$USER'"/' load-initial-data.sh
+sudo sed -i -r 's/pass=.*/pass="'$PASSWD'"/' load-initial-data.sh
+
 ./load-initial-data.sh data.json
