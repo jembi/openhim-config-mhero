@@ -12,7 +12,7 @@ TARGETS=(*)
 echo "Targets: $TARGETS"
 cd $HOME
 
-PKG=openhim-config-<your_project>
+PKG=openhim-config-mhero
 PKGVER=0.1.0
 
 echo -n "Would you like to upload the build(s) to Launchpad? [y/N] "
